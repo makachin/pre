@@ -22,7 +22,6 @@ public class ViewController {
 		return "view/classappend";
 	}
 
-
     @GetMapping("/view/i18n")
     public String i18n(Model model) {
          model.addAttribute("main", "main");
