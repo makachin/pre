@@ -14,12 +14,11 @@ import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.ISBN;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
-//@Data
+//@Getter
+//@Setter
+@Data
 @Entity
 public class Book {
 	@Id

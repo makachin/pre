@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>速習 Spring Boot</title>
+<style>
+.high  {
+     background-color: #FFC0CB
+}
+
+.low {
+    background-color: #7FFFD4
+}
+</style>
+</head>
+<body>
+	<div class="alert" th:classappend="alert-success">class属性の追加　th:classappend</div>
+	<div class="alert" th:attrappend="class=' alert-success'">class属性の追加　th:attrappend</div>
+	<div class="alert" style= "background-color: #00ff00;">styleのみ　style= "background-color: #00ff00;</div>
+	<div class="alert" style= "background-color: #00ff00;" th:styleappend="'font-size: small;'">style属性の追加　style= "background-color: #00ff00;" th:styleappend="'font-size: small;'"</div>
+
+</body>
+</html>
